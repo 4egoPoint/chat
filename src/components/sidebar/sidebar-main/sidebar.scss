@@ -1,0 +1,13 @@
+.sidebar {
+   transition: translate var(--animation-timing);
+   translate: -100%;
+   padding: 0.5rem 1rem;
+   padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+   background-color: var(--foreground);
+   color: var(--background);
+   max-width: 30rem;
+   min-height: 100vh;
+}
+.c-header__menu:has(input:checked) + .sidebar{
+   translate: 0;
+}
